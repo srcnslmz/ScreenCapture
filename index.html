@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <title>ScreenCapture</title>
+    <script type="text/javascript" src="ScreenCapture.js"></script>
+</head>
+
+<body>
+    <button onclick="CaptureAndSaveAllPage('screenshot')">Capture And Save All Page</button>
+    <button onclick="CaptureAndSavePartialPage('screenshot', 'selectorElement')">Capture And Save Partial Page</button>
+    <button onclick="CaptureAllPage('targetElement')">Capture All Page</button>
+    <button onclick="CapturePartialPage('selectorElement', 'targetElement')">Capture Partial Page</button>
+    <br>
+    <div id="selectorElement" style="width: 150px; height: 150px; background-color: red;">
+        <h1>Partial selection area</h1>
+    </div>
+    <div>
+        <img id="targetElement">
+    </div>
+</body>
+
+</html>
